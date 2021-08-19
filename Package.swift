@@ -24,5 +24,5 @@ let package = Package(
             dependencies: ["mParticle-Apple-SDK","Branch"],
             path: "mParticle-BranchMetrics",
             publicHeadersPath: "."),
-    ],
+    ]
 )
