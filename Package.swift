@@ -21,8 +21,10 @@ let package = Package(
     targets: [
         .target(
             name: "mParticle-BranchMetrics",
-            dependencies: ["mParticle-Apple-SDK","Branch"],
-            path: "mParticle-BranchMetrics",
-            publicHeadersPath: "."),
+            dependencies: [
+                .byName(name: "mParticle-Apple-SDK"),
+                .product(name: "Branch"),
+            ]
+        )
     ]
 )
